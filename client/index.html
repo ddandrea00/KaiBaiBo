@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>KaiBaiBo!</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Shojumaru|Yatra+One" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Kai Bai Bo!</h1>
+        </div>
+        <div class="kbb-wrapper">
+            <ul id="events"></ul> 
+            <div class="controls">
+                <div class="chat-wrapper">
+                    <form id="chat-form">
+                        <input id="chat" placeholder="Send Message" autocomplete="off" title="chat">
+                        <button id="go">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <div class="kai">
+                <img src="/styles/kai.png" id="kai" class="turn">Kai (Rock)</img>
+            </div>
+            <div class='bai'>
+                <img src="/styles/bai.png" id="bai" class="turn">Bai (Paper)</img>
+            </div>
+            <div class="bo">
+                <img src="/styles/bo.png" id="bo" class="turn">Bo (Scissors)</img>
+            </div>
+        </div>
+
+        <audio src="/media/main.mp3" autoplay loop></audio>
+        <audio id="hover"> 
+            <source 
+            src="/media/hover.mp3"
+            type="audio/mpeg">
+        </audio>
+        <audio id="hah"> 
+            <source 
+            src="/media/hah.mp3"
+            type="audio/mpeg">
+        </audio>
+        <audio id="message"> 
+            <source 
+            src="/media/message.mp3"
+            type="audio/mpeg">
+        </audio>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="src/client.js"></script>
+    </body>
+</html>

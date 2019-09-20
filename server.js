@@ -35,3 +35,7 @@ io.on('connection', (sock) => {
 server.on('error', (err) => {
     console.error('Server error:', err);
 });
+
+server.listen(process.env.PORT || 5000, function () {
+    console.log("Server started");
+});

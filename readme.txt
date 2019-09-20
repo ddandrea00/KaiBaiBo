@@ -1,9 +1,6 @@
-To start server run:
+Check Out the Live Version: https://cryptic-tundra-67466.herokuapp.com/
 
-npm run dev
-
-
-Feature Add Ons:
+Future Feature Add Ons:
 
 1. Score Tally for each user:
 
@@ -15,4 +12,3 @@ Feature Add Ons:
 
 5. auto scroll for when messages are added
 
-6. 
